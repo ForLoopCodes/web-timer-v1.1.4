@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "Styles.css">
+		<script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<style>
+			* {
+				user-select: none;
+				font-family: ellograph CF;
+				font-weight: 700;
+				transition: 0.3s ease;
+			}
+			body {
+				background-image: linear-gradient(315deg, rgba(46,146,201,0.161) 0%, rgba(224,108,58,0.212) 100%);
+				background-color: black;
+			}
+		</style>
+    </head>
+    <body>
+		<!--
+		
+			FUTURE VERSIONS WILL INCLUDE:
+				1. DARK MODE SETTING.
+				2. COOL ANIMATIONS ON BUTTONS.
+				3. HOVER TRANSITIONS.
+				4. BACKGROUND IN TIMER.
+				5. ARC IN TIMER.
+
+				∞. FEATURES LIKE CLOCK, STOPWATCH, FOCUS MODE, AND IDK...
+		
+		-->
+		<div name = "main-timer-parent">
+			<div id = "function-holder">
+				<div id = "main-timer">
+					<div id = "negtimer">
+						<button id = "addhr" class = "timerwidj" onclick = "addonehr()" title = "Add one hour.">
+							<img src = "up-arrow-icon.svg" class = "timer-icon-up"></img>
+						</button>
+						<button id = "addmin" class = "timerwidj" onclick = "addfifteenmin()" title = "Add fifteen minutes.">
+							<img src = "up-arrow-icon.svg" class = "timer-icon-up"></img>
+						</button>
+						<button id = "addsec" class = "timerwidj" onclick = "addsixtysec()" title = "Add one minutes.">
+							<img src = "up-arrow-icon.svg" class = "timer-icon-up"></img>
+						</button>
+					</div>
+					<div class = "timeredit" id = "timerinputedit">
+						<input id = "inputhr" type = "text" onblur = "limiter(this);" onclick = "document.getElementById('inputhr').style.opacity = '1'" title = "Click to change number of hours.">
+						</input>
+						<input id = "inputmin" type = "text" onblur = "limitermin(this);" onclick = "document.getElementById('inputmin').style.opacity = '1'" title = "Click to change number of minutes.">
+						</input>
+					</div>
+					<div id = "mytimer">
+					
+					</div>
+					<div id = "postimer">
+						<button id = "minushr" class = "timerwidj" onclick = "minusonehr()" title = "Remove one hour.">
+							<img src = "up-arrow-icon.svg" class = "timer-icon-down"></img>
+						</button>
+						<button id = "minusmin" class = "timerwidj" onclick = "minusfifteenmin()" title = "Remove fifteen minutes.">
+							<img src = "up-arrow-icon.svg" class = "timer-icon-down"></img>
+						</button>
+						<button id = "minussec" class = "timerwidj" onclick = "minussixtysec()" title = "Remove one minute.">
+							<img src = "up-arrow-icon.svg" class = "timer-icon-down"></img>
+						</button>
+					</div>
+				</div>
+				<br>
+				<div id = "timerfunctions">
+					<button id = "mytimerplay" onclick = "playtimer();" title = "Play timer.">
+						<img src = "play.svg" class = "timer-func-icon"></img>
+					</button>
+					<button id = "mytimerreset" onclick = "resettimer()" title = "Reset timer.">
+						<img src = "reset.svg" class = "timer-func-icon"></img>
+					</button>
+					<button id = "mytimerpause" onclick = "pausetimer()" title = "Pause timer.">
+						<img src = "pause.svg" class = "timer-func-icon"></img>
+					</button>
+				</div>
+				<svg id = "arctimer">
+					<path id="arc1" style = "transition: 3s ease;" fill="none" stroke="black" stroke-width="5" />
+				</svg>
+			</div>
+			<script src = "Timerjscripts.js"></script>
+		</div>
+    </body>
+</html>
