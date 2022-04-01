@@ -7,7 +7,23 @@ This **HTML**, **CSS**, and **JavaScript based** timer is ease to use on any dev
 
 ## Learn how to use this timer.
 
-> (I m going to add this section tomorrow. 😅)
+> 1. The numbers on the display **show how much time** is set in the timer. (Default: 20 minutes.)
+> 2. Use the up-arrow button on top-left to increase time by 1 hour.
+> 3. Use the up-arrow button on top-center to increase time by 15 minutes.
+> 4. Use the up-arrow button on top-right to increase time by 1 minute.
+> 5. Use the down-arrow button on bottom-left to decrease time by 1 hour.
+> 6. Use the down-arrow button on bottom-center to decrease time by 15 minutes.
+> 7. Use the down-arrow button on bottom-right to decrease time by 1 minute.
+> 8. Use the **Play/Pause** buttons to play/pause timer.
+> 9. Use the **Reset** button to reset the timer.
+> 10. Use the **Theme change** button to change the theme (dark/light) of timer. (Default: Light mode.)
+> 11. As soon as you **start a timer, The buttons will fade away** and a whole new system of controls will be visible.
+> 12. Now you can also use **shortcut keys** to use the controls.
+>     - **```S```** Start/Stop.
+>     - **```R```** Reset.
+>     - **```D```** Toggle dark/light mode.
+>     - **```F```** Enable full screen.
+>     - **```Esc```** Disable full screen.
 
 
 ## Contact:
