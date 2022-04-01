@@ -175,33 +175,33 @@
 			<div id = "function-holder">
 				<div id = "main-timer">
 					<div id = "negtimer">
-						<button id = "addhr" class = "timerwidj" onclick = "addonehr()" title = "Add one hour.">
+						<button id = "addhr" class = "timerwidj" onclick = "addOneHr()" title = "Add one hour.">
 							<svg class = "timer-icon-up" viewBox="0 0 24 24"><path d="M19.061,13.439,14.475,8.854a3.583,3.583,0,0,0-4.95,0L4.939,13.439a1.5,1.5,0,0,0,2.122,2.122l4.586-4.586a.5.5,0,0,1,.707,0l4.585,4.586a1.5,1.5,0,0,0,2.122-2.122Z"/></svg>
 						</button>
-						<button id = "addmin" class = "timerwidj" onclick = "addfifteenmin()" title = "Add fifteen minutes.">
+						<button id = "addmin" class = "timerwidj" onclick = "addFifteenMin()" title = "Add fifteen minutes.">
 							<svg class = "timer-icon-up" viewBox="0 0 24 24"><path d="M19.061,13.439,14.475,8.854a3.583,3.583,0,0,0-4.95,0L4.939,13.439a1.5,1.5,0,0,0,2.122,2.122l4.586-4.586a.5.5,0,0,1,.707,0l4.585,4.586a1.5,1.5,0,0,0,2.122-2.122Z"/></svg>
 						</button>
-						<button id = "addsec" class = "timerwidj" onclick = "addsixtysec()" title = "Add one minutes.">
+						<button id = "addsec" class = "timerwidj" onclick = "addSixtySec()" title = "Add one minutes.">
 							<svg class = "timer-icon-up" viewBox="0 0 24 24"><path d="M19.061,13.439,14.475,8.854a3.583,3.583,0,0,0-4.95,0L4.939,13.439a1.5,1.5,0,0,0,2.122,2.122l4.586-4.586a.5.5,0,0,1,.707,0l4.585,4.586a1.5,1.5,0,0,0,2.122-2.122Z"/></svg>
 						</button>
 					</div>
 					<div class = "timeredit" id = "timerinputedit">
 						<input id = "inputhr" type = "text" onblur = "limiter(this);" onclick = "document.getElementById('inputhr').style.opacity = '1'" title = "Click to change number of hours.">
 						</input>
-						<input id = "inputmin" type = "text" onblur = "limitermin(this);" onclick = "document.getElementById('inputmin').style.opacity = '1'" title = "Click to change number of minutes.">
+						<input id = "inputmin" type = "text" onblur = "limiterMin(this);" onclick = "document.getElementById('inputmin').style.opacity = '1'" title = "Click to change number of minutes.">
 						</input>
 					</div>
 					<div id = "mytimer">
 					
 					</div>
 					<div id = "postimer">
-						<button id = "minushr" class = "timerwidj" onclick = "minusonehr()" title = "Remove one hour.">
+						<button id = "minushr" class = "timerwidj" onclick = "minusOneHr()" title = "Remove one hour.">
 							<svg class = "timer-icon-down" viewBox="0 0 24 24"><path d="M19.061,13.439,14.475,8.854a3.583,3.583,0,0,0-4.95,0L4.939,13.439a1.5,1.5,0,0,0,2.122,2.122l4.586-4.586a.5.5,0,0,1,.707,0l4.585,4.586a1.5,1.5,0,0,0,2.122-2.122Z"/></svg>
 						</button>
-						<button id = "minusmin" class = "timerwidj" onclick = "minusfifteenmin()" title = "Remove fifteen minutes.">
+						<button id = "minusmin" class = "timerwidj" onclick = "minusFifteenMin()" title = "Remove fifteen minutes.">
 							<svg class = "timer-icon-down" viewBox="0 0 24 24"><path d="M19.061,13.439,14.475,8.854a3.583,3.583,0,0,0-4.95,0L4.939,13.439a1.5,1.5,0,0,0,2.122,2.122l4.586-4.586a.5.5,0,0,1,.707,0l4.585,4.586a1.5,1.5,0,0,0,2.122-2.122Z"/></svg>
 						</button>
-						<button id = "minussec" class = "timerwidj" onclick = "minussixtysec()" title = "Remove one minute.">
+						<button id = "minussec" class = "timerwidj" onclick = "minusSixtySec()" title = "Remove one minute.">
 							<svg class = "timer-icon-down" viewBox="0 0 24 24"><path d="M19.061,13.439,14.475,8.854a3.583,3.583,0,0,0-4.95,0L4.939,13.439a1.5,1.5,0,0,0,2.122,2.122l4.586-4.586a.5.5,0,0,1,.707,0l4.585,4.586a1.5,1.5,0,0,0,2.122-2.122Z"/></svg>
 						</button>
 					</div>
@@ -211,13 +211,13 @@
 					<button id = "mytimerplay" onclick = "playtimer();" title = "Play timer.">
 						<svg class = "timer-func-icon" viewBox="0 0 24 24"><path d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z"/></svg>
 					</button>
-					<button id = "mytimerreset" onclick = "resettimer()" title = "Reset timer.">
+					<button id = "mytimerreset" onclick = "resetTimer()" title = "Reset timer.">
 						<svg class = "timer-func-icon" viewBox="0 0 511.494 511.494"><g><path d="M478.291,255.492c-16.133,0.143-29.689,12.161-31.765,28.16c-15.37,105.014-112.961,177.685-217.975,162.315   S50.866,333.006,66.236,227.992S179.197,50.307,284.211,65.677c35.796,5.239,69.386,20.476,96.907,43.959l-24.107,24.107   c-8.33,8.332-8.328,21.84,0.004,30.17c4.015,4.014,9.465,6.262,15.142,6.246h97.835c11.782,0,21.333-9.551,21.333-21.333V50.991   c-0.003-11.782-9.556-21.331-21.338-21.329c-5.655,0.001-11.079,2.248-15.078,6.246l-28.416,28.416   C320.774-29.34,159.141-19.568,65.476,86.152S-18.415,353.505,87.304,447.17s267.353,83.892,361.017-21.828   c32.972-37.216,54.381-83.237,61.607-132.431c2.828-17.612-9.157-34.183-26.769-37.011   C481.549,255.641,479.922,255.505,478.291,255.492z"/></g></svg>
 					</button>
-					<button id = "mytimerpause" onclick = "pausetimer()" title = "Pause timer.">
+					<button id = "mytimerpause" onclick = "pauseTimer()" title = "Pause timer.">
 						<svg class = "timer-func-icon" viewBox="0 0 24 24"><path d="M6.5,0A3.5,3.5,0,0,0,3,3.5v17a3.5,3.5,0,0,0,7,0V3.5A3.5,3.5,0,0,0,6.5,0Z"/><path d="M17.5,0A3.5,3.5,0,0,0,14,3.5v17a3.5,3.5,0,0,0,7,0V3.5A3.5,3.5,0,0,0,17.5,0Z"/></svg>
 					</button>
-					<button id = "mytimermode" onclick = "mytimerdarkmodeon()" title = "Dark mode.">
+					<button id = "mytimermode" onclick = "myTimerDarkModeOn()" title = "Dark mode.">
 						<svg class = "timer-func-icon" viewBox="0 0 24 24"><path xmlns="http://www.w3.org/2000/svg" d="M15,24a12.021,12.021,0,0,1-8.914-3.966,11.9,11.9,0,0,1-3.02-9.309A12.122,12.122,0,0,1,13.085.152a13.061,13.061,0,0,1,5.031.205,2.5,2.5,0,0,1,1.108,4.226c-4.56,4.166-4.164,10.644.807,14.41a2.5,2.5,0,0,1-.7,4.32A13.894,13.894,0,0,1,15,24Z"/></svg>
 					</button>
 				</div>
@@ -226,43 +226,43 @@
 				</svg>
 			</div>
 			<script>
-				let timerminutesasprovided = 20;
-				let timerhoursasprovided = 0;
-				let timertimecountingbyminutesandhours = (60 * timerminutesasprovided) + (3600 * timerhoursasprovided);
-				let timerplaypauseinterval;
-				function timerbasefunctionfordecreasingtime() {
-					let timersecondsbasecount = (timertimecountingbyminutesandhours % 60).toString().padStart(2, "0");
-					let timerminutesbasecount = ((Math.floor(timertimecountingbyminutesandhours / 60)) - (60 * Math.floor(timertimecountingbyminutesandhours / 3600))).toString().padStart(2, "0");
-					let timerhoursbasecount = (Math.floor(timertimecountingbyminutesandhours / 3600)).toString().padStart(2, "0");
-					if (timerhoursbasecount > 0) {
-						document.getElementById('mytimer').innerHTML = timerhoursbasecount + ":" + timerminutesbasecount + ":" + timersecondsbasecount;
+				let timerMinutesAsProvided = 20;
+				let timerHoursAsProvided = 0;
+				let timerTimeCountingByMinutesAndHours = (60 * timerMinutesAsProvided) + (3600 * timerHoursAsProvided);
+				let timerPlayPauseInterval;
+				function timerBaseFunctionForDecreasingTime() {
+					let timerSecondsBaseCount = (timerTimeCountingByMinutesAndHours % 60).toString().padStart(2, "0");
+					let timerMinutesBaseCount = ((Math.floor(timerTimeCountingByMinutesAndHours / 60)) - (60 * Math.floor(timerTimeCountingByMinutesAndHours / 3600))).toString().padStart(2, "0");
+					let timerHoursBaseCount = (Math.floor(timerTimeCountingByMinutesAndHours / 3600)).toString().padStart(2, "0");
+					if (timerHoursBaseCount > 0) {
+						document.getElementById('mytimer').innerHTML = timerHoursBaseCount + ":" + timerMinutesBaseCount + ":" + timerSecondsBaseCount;
 					}
-					else if (timerhoursbasecount == 0) {
-						document.getElementById('mytimer').innerHTML = timerminutesbasecount + ":" + timersecondsbasecount;
+					else if (timerHoursBaseCount == 0) {
+						document.getElementById('mytimer').innerHTML = timerMinutesBaseCount + ":" + timerSecondsBaseCount;
 					}
 					else {
 						document.getElementById('mytimer').innerHTML = "timer failed!";
 					}
 				}
-				let timersecondsbasecount;
-				let timerminutesbasecount;
-				let timerhoursbasecount;
-				function timersmallbasefunctionforsettingtime() {
-					timersecondsbasecount = (timertimecountingbyminutesandhours % 60).toString().padStart(2, "0");
-					timerminutesbasecount = ((Math.floor(timertimecountingbyminutesandhours / 60)) - (60 * Math.floor(timertimecountingbyminutesandhours / 3600))).toString().padStart(2, "0");
-					timerhoursbasecount = (Math.floor(timertimecountingbyminutesandhours / 3600)).toString().padStart(2, "0");
-					if (timerminutesasprovided > 59) {
-						timerhoursasprovided = timerhoursasprovided + 1;
-						timerminutesasprovided = timerminutesasprovided - 60;
+				let timerSecondsBaseCount;
+				let timerMinutesBaseCount;
+				let timerHoursBaseCount;
+				function timerSmallBaseFunctionForSettingTime() {
+					timerSecondsBaseCount = (timerTimeCountingByMinutesAndHours % 60).toString().padStart(2, "0");
+					timerMinutesBaseCount = ((Math.floor(timerTimeCountingByMinutesAndHours / 60)) - (60 * Math.floor(timerTimeCountingByMinutesAndHours / 3600))).toString().padStart(2, "0");
+					timerHoursBaseCount = (Math.floor(timerTimeCountingByMinutesAndHours / 3600)).toString().padStart(2, "0");
+					if (timerMinutesAsProvided > 59) {
+						timerHoursAsProvided = timerHoursAsProvided + 1;
+						timerMinutesAsProvided = timerMinutesAsProvided - 60;
 					}
-					if (timerminutesasprovided < 0) {
-						timerhoursasprovided = timerhoursbasecount * 1;
+					if (timerMinutesAsProvided < 0) {
+						timerHoursAsProvided = timerHoursBaseCount * 1;
 						document.getElementById("addsec").click();
 						document.getElementById("minussec").click();
 					}
-					if (timertimecountingbyminutesandhours > 359940) {
-						timerhoursbasecount = 99;
-						timerminutesbasecount = 59;
+					if (timerTimeCountingByMinutesAndHours > 359940) {
+						timerHoursBaseCount = 99;
+						timerMinutesBaseCount = 59;
 						document.getElementById('addhr').disabled = true;
 						document.getElementById('addmin').disabled = true;
 						document.getElementById('addsec').disabled = true;
@@ -272,63 +272,63 @@
 						document.getElementById('addmin').disabled = false;
 						document.getElementById('addsec').disabled = false;
 					}
-					if (timertimecountingbyminutesandhours > 0) {
-						$('#inputhr').attr('placeholder', timerhoursbasecount);
-						$('#inputmin').attr('placeholder', timerminutesbasecount);
-						document.getElementById('mytimer').innerHTML = timerhoursbasecount + ":" + timerminutesbasecount + ":" + timersecondsbasecount;
+					if (timerTimeCountingByMinutesAndHours > 0) {
+						$('#inputhr').attr('placeholder', timerHoursBaseCount);
+						$('#inputmin').attr('placeholder', timerMinutesBaseCount);
+						document.getElementById('mytimer').innerHTML = timerHoursBaseCount + ":" + timerMinutesBaseCount + ":" + timerSecondsBaseCount;
 						document.getElementById('minushr').disabled = false;
 						document.getElementById('minusmin').disabled = false;
 						document.getElementById('minussec').disabled = false;
 					}
 					else {
-						timersecondsbasecount = (0).toString().padStart(2, "0");
-						timerminutesbasecount = (0).toString().padStart(2, "0");
-						timerhoursbasecount = (0).toString().padStart(2, "0");
-						timertimecountingbyminutesandhours = 0;
+						timerSecondsBaseCount = (0).toString().padStart(2, "0");
+						timerMinutesBaseCount = (0).toString().padStart(2, "0");
+						timerHoursBaseCount = (0).toString().padStart(2, "0");
+						timerTimeCountingByMinutesAndHours = 0;
 						document.getElementById('minushr').disabled = true;
 						document.getElementById('minusmin').disabled = true;
 						document.getElementById('minussec').disabled = true;
-						$('#inputhr').attr('placeholder', timerhoursbasecount);
-						$('#inputmin').attr('placeholder', timerminutesbasecount);
-						document.getElementById('mytimer').innerHTML = timerhoursbasecount + ":" + timerminutesbasecount + ":" + timersecondsbasecount;
+						$('#inputhr').attr('placeholder', timerHoursBaseCount);
+						$('#inputmin').attr('placeholder', timerMinutesBaseCount);
+						document.getElementById('mytimer').innerHTML = timerHoursBaseCount + ":" + timerMinutesBaseCount + ":" + timerSecondsBaseCount;
 					}
 				}
-				timersmallbasefunctionforsettingtime();
-				function addsixtysec() {
-					timertimecountingbyminutesandhours = timertimecountingbyminutesandhours + 60;
+				timerSmallBaseFunctionForSettingTime();
+				function addSixtySec() {
+					timerTimeCountingByMinutesAndHours = timerTimeCountingByMinutesAndHours + 60;
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
-					timersmallbasefunctionforsettingtime();
+					timerSmallBaseFunctionForSettingTime();
 				}
-				function minussixtysec() {
-					timertimecountingbyminutesandhours = timertimecountingbyminutesandhours - 60;
+				function minusSixtySec() {
+					timerTimeCountingByMinutesAndHours = timerTimeCountingByMinutesAndHours - 60;
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
-					timersmallbasefunctionforsettingtime();
+					timerSmallBaseFunctionForSettingTime();
 				}
-				function addfifteenmin() {
-					timertimecountingbyminutesandhours = timertimecountingbyminutesandhours + 900;
+				function addFifteenMin() {
+					timerTimeCountingByMinutesAndHours = timerTimeCountingByMinutesAndHours + 900;
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
-					timersmallbasefunctionforsettingtime();
+					timerSmallBaseFunctionForSettingTime();
 				}
-				function minusfifteenmin() {
-					timertimecountingbyminutesandhours = timertimecountingbyminutesandhours - 900;
+				function minusFifteenMin() {
+					timerTimeCountingByMinutesAndHours = timerTimeCountingByMinutesAndHours - 900;
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
-					timersmallbasefunctionforsettingtime();
+					timerSmallBaseFunctionForSettingTime();
 				}
-				function addonehr() {
-					timertimecountingbyminutesandhours = timertimecountingbyminutesandhours + 3600;
+				function addOneHr() {
+					timerTimeCountingByMinutesAndHours = timerTimeCountingByMinutesAndHours + 3600;
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
-					timersmallbasefunctionforsettingtime();
+					timerSmallBaseFunctionForSettingTime();
 				}
-				function minusonehr() {
-					timertimecountingbyminutesandhours = timertimecountingbyminutesandhours - 3600;
+				function minusOneHr() {
+					timerTimeCountingByMinutesAndHours = timerTimeCountingByMinutesAndHours - 3600;
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
-					timersmallbasefunctionforsettingtime();
+					timerSmallBaseFunctionForSettingTime();
 				}
 				document.body.onkeyup = function(e){
 					if(e.keyCode == 83){
@@ -357,17 +357,17 @@
 					}
 				}
 				function playtimer() {
-					timerplaypauseinterval = setInterval (
-						function timerfunc() {
-							timerbasefunctionfordecreasingtime();
-							timertimecountingbyminutesandhours--;
-							if (timertimecountingbyminutesandhours < 0) {
+					timerPlayPauseInterval = setInterval (
+						function timerFunc() {
+							timerBaseFunctionForDecreasingTime();
+							timerTimeCountingByMinutesAndHours--;
+							if (timerTimeCountingByMinutesAndHours < 0) {
 								document.getElementById('mytimer').innerHTML = 'timer finished!';
 								document.getElementById('arctimer').style.opacity = '0';
 								document.getElementById('mytimerreset').style.display = 'block';
 								document.getElementById('mytimer').style.animationName = 'timerblink';
 								document.getElementById('mytimerpause').style.display = 'none';
-								clearInterval(timerplaypauseinterval);
+								clearInterval(timerPlayPauseInterval);
 							}
 						}
 					, 1000)
@@ -386,7 +386,7 @@
 						if(e.keyCode == 83){
 							timerspacebartriggerpause = setInterval (
 								function() {
-									pausetimer();
+									pauseTimer();
 									clearInterval(timerspacebartriggerpause);
 								}
 							)
@@ -394,7 +394,7 @@
 						if(e.keyCode == 32){
 							timerspacebatriggerpause = setInterval (
 								function() {
-									pausetimer();
+									pauseTimer();
 									clearInterval(timerspacebatriggerpause);
 								}
 							)
@@ -418,8 +418,8 @@
 					}
 				}
 					
-				function pausetimer() {
-					clearInterval(timerplaypauseinterval);
+				function pauseTimer() {
+					clearInterval(timerPlayPauseInterval);
 					document.getElementById('mytimerpause').style.display = 'none';
 					document.getElementById('mytimerplay').style.display = 'block';
 					document.getElementById('mytimermode').style.display = 'none';
@@ -430,7 +430,7 @@
 						if(e.keyCode == 82){
 							timerspacebartriggerreset = setInterval (
 								function() {
-									resettimer();
+									resetTimer();
 									clearInterval(timerspacebartriggerreset);
 								}
 							)
@@ -461,9 +461,9 @@
 						}
 					}
 				}
-				function resettimer() {
-					timertimecountingbyminutesandhours = (60 * timerminutesbasecount) + (3600 * timerhoursbasecount);
-					timersmallbasefunctionforsettingtime();
+				function resetTimer() {
+					timerTimeCountingByMinutesAndHours = (60 * timerMinutesBaseCount) + (3600 * timerHoursBaseCount);
+					timerSmallBaseFunctionForSettingTime();
 					document.querySelector("#inputhr").value = '';
 					document.querySelector("#inputmin").value = '';
 					document.getElementById('mytimerpause').style.display = 'none';
@@ -519,19 +519,19 @@
 				}
 				function getInputValuehrs() {
 					let inputVal = document.querySelector("#inputhr").value;
-					timertimecountingbyminutesandhours = (timertimecountingbyminutesandhours * 0) + (timerminutesbasecount * 60);
-					timerhoursasprovided = (timerhoursasprovided * 0);
-					let mintext = 0;
+					timerTimeCountingByMinutesAndHours = (timerTimeCountingByMinutesAndHours * 0) + (timerMinutesBaseCount * 60);
+					timerHoursAsProvided = (timerHoursAsProvided * 0);
+					let minText = 0;
 					minfunc = setInterval( 
-						function hourstextadd() {
-							if (mintext < inputVal) {
-								addonehr();
-								mintext = mintext + 1;
+						function hoursTextAdd() {
+							if (minText < inputVal) {
+								addOneHr();
+								minText = minText + 1;
 							}
-							else if (mintext == inputVal) {
-								timerhoursasprovided = 0;
-								timersmallbasefunctionforsettingtime();
-								mintext = mintext + 1;
+							else if (minText == inputVal) {
+								timerHoursAsProvided = 0;
+								timerSmallBaseFunctionForSettingTime();
+								minText = minText + 1;
 							}
 							else {
 								clearInterval(minfunc);
@@ -539,42 +539,40 @@
 						}
 					, 10)
 				}
-				function limitermin(input) {
+				function limiterMin(input) {
 					if (input.value < 0) {
 						input.value = 0;
-						getInputValuemin();
+						getInputValueMin();
 					}
 					else if (input.value > 59) {
 						input.value = 59;
-						getInputValuemin();
+						getInputValueMin();
 					}
 					else if (input.value == "") {
 						console.log('alert');
 					}
 					else {
-						getInputValuemin();
+						getInputValueMin();
 					}
 					document.getElementById("inputmin").style.opacity = '0';
 				}
-				function getInputValuemin() {
-					let inputValmin = document.querySelector("#inputmin").value;
-					timertimecountingbyminutesandhours = (timertimecountingbyminutesandhours * 0) + (timerhoursbasecount * 3600);
-					timerminutesasprovided = timerminutesasprovided * 0;
-					let hourtext = 0;
+				function getInputValueMin() {
+					let inputValMin = document.querySelector("#inputmin").value;
+					timerTimeCountingByMinutesAndHours = (timerTimeCountingByMinutesAndHours * 0) + (timerHoursBaseCount * 3600);
+					timerMinutesAsProvided = timerMinutesAsProvided * 0;
+					let hourText = 0;
 					hrfunc = setInterval( 
-						function hourstextadd() {
-							if (hourtext < inputValmin) {
-								addsixtysec();
-								hourtext = hourtext + 1;
+						function hoursTextAdd() {
+							if (hourText < inputValMin) {
+								addSixtySec();
+								hourText = hourText + 1;
 							}
-							else if (hourtext == inputValmin) {
-								timerminutesasprovided = 0;
-								timersmallbasefunctionforsettingtime();
-								hourtext = hourtext + 1;
+							else if (hourText == inputValMin) {
+								timerMinutesAsProvided = 0;
+								timerSmallBaseFunctionForSettingTime();
+								hourText = hourText + 1;
 							}
-							else {
-								clearInterval(hrfunc);
-							}
+							else clearInterval(hrfunc);
 						}
 					, 10)
 				}
@@ -598,16 +596,14 @@
 				window.onload = function() {
 					setInterval( 
 						function() {
-							degchange = 360*(timertimecountingbyminutesandhours/((timerminutesbasecount*60)+(timerhoursbasecount*3600)))
+							degchange = 360*(timerTimeCountingByMinutesAndHours/((timerMinutesBaseCount*60)+(timerHoursBaseCount*3600)))
 							document.getElementById("arc1").setAttribute("d", describeArc(80, 80, 75, 0, degchange));
 						}
 					), 1000;
 				};
-				function mytimerdarkmodeon() {
+				function myTimerDarkModeOn() {
 					const nodeList = document.querySelectorAll('path');
-					for (let i = 0; i < nodeList.length; i++) {
-						nodeList[i].style.filter = 'invert(1)';
-					}
+					for (let i = 0; i < nodeList.length; i++) nodeList[i].style.filter = 'invert(1)';
 					document.querySelector('body').style.background = '#001328';
 					document.querySelector('#inputhr').style.filter = 'invert(1)';
 					document.querySelector('#inputmin').style.filter = 'invert(1)';
@@ -615,11 +611,9 @@
 					$('#mytimermode').attr('onclick', 'myTimerLightModeOn()');
 					$('#mytimermode').attr('title', 'Light mode.');
 				}
-				function mytimerlightmodeon() {
+				function myTimerLightModeOn() {
 					const nodeList = document.querySelectorAll('path');
-					for (let i = 0; i < nodeList.length; i++) {
-						nodeList[i].style.filter = 'invert(0)';
-					}
+					for (let i = 0; i < nodeList.length; i++) nodeList[i].style.filter = 'invert(0)';
 					document.querySelector('body').style.background = '#e8f0f9';
 					document.querySelector('#inputhr').style.filter = 'invert(0)';
 					document.querySelector('#inputmin').style.filter = 'invert(0)';
