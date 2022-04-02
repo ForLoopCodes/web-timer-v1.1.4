@@ -628,11 +628,11 @@
 				}
 				function myTimerFsOn() {
 					document.querySelector("body").requestFullscreen();
-					$('#mytimerfs').attr('onclick', 'myTimerFsOff');
+					$('#mytimerfs').attr('onclick', 'myTimerFsOff()');
 				}
 				function myTimerFsOff() {
 					document.exitFullscreen();
-					$('#mytimerfs').attr('onclick', 'myTimerFsOn');
+					$('#mytimerfs').attr('onclick', 'myTimerFsOn()');
 				}
 			</script>
 		</div>
