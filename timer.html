@@ -20,8 +20,6 @@
 				height: 100%;
 				width: 100%;
 				margin: 0;
-				/* background-image: url("Wallpaper.jpg"); */
-					/* linear-gradient(315deg, rgba(46,146,201,0.161) 0%, rgba(224,108,58,0.212) 100%) */
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -55,7 +53,7 @@
 					opacity: 1;
 				}
 			}
-			.timerwidj, #mytimerplay, #mytimerreset, #mytimerpause, #mytimermode {
+			.timerwidj, #mytimerplay, #mytimerreset, #mytimerpause, #mytimermode, #mytimerfs {
 				border: 3px solid #2b81c3;
 				filter: invert(0);
 				user-select: none;
@@ -77,6 +75,9 @@
 				display: none;
 			}
 			#mytimerreset {
+				display: none;
+			}
+			#mytimerfs {
 				display: none;
 			}
 			.timerwidj {	
@@ -110,7 +111,7 @@
 				height: 10px;
 				width: auto;
 			}
-			#mytimerplay, #mytimerreset, #mytimerpause, #mytimermode {
+			#mytimerplay, #mytimerreset, #mytimerpause, #mytimermode, #mytimerfs {
 				width: 50px;
 				margin-left: 2.5px;
 				margin-right: 2.5px;
@@ -158,9 +159,6 @@
 			#arc1 {
 				filter: invert(0) !important;
 			}
-			#mytimerfs {
-				display: none;	
-			}
 		</style>
     </head>
     <body>
@@ -169,7 +167,6 @@
 			FUTURE VERSIONS WILL INCLUDE:
 				1. COOL ANIMATIONS ON BUTTONS.
 				2. HOVER TRANSITIONS.
-				3. BACKGROUND IN TIMER.
 
 				∞. FEATURES LIKE CLOCK, STOPWATCH, FOCUS MODE, AND IDK...
 		
@@ -224,6 +221,7 @@
 						<svg class = "timer-func-icon" viewBox="0 0 24 24"><path xmlns="http://www.w3.org/2000/svg" d="M15,24a12.021,12.021,0,0,1-8.914-3.966,11.9,11.9,0,0,1-3.02-9.309A12.122,12.122,0,0,1,13.085.152a13.061,13.061,0,0,1,5.031.205,2.5,2.5,0,0,1,1.108,4.226c-4.56,4.166-4.164,10.644.807,14.41a2.5,2.5,0,0,1-.7,4.32A13.894,13.894,0,0,1,15,24Z"/></svg>
 					</button>
 					<button id = "mytimerfs" onclick = "myTimerFsOn()">
+						<svg class = "timer-func-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="512" height="512"><path d="M22.5,15.5A1.5,1.5,0,0,0,21,17v1.5A2.5,2.5,0,0,1,18.5,21H17a1.5,1.5,0,0,0,0,3h1.5A5.506,5.506,0,0,0,24,18.5V17A1.5,1.5,0,0,0,22.5,15.5Z"/><path d="M7,0H5.5A5.506,5.506,0,0,0,0,5.5V7A1.5,1.5,0,0,0,3,7V5.5A2.5,2.5,0,0,1,5.5,3H7A1.5,1.5,0,0,0,7,0Z"/><path d="M7,21H5.5A2.5,2.5,0,0,1,3,18.5V17a1.5,1.5,0,0,0-3,0v1.5A5.506,5.506,0,0,0,5.5,24H7a1.5,1.5,0,0,0,0-3Z"/><path d="M18.5,0H17a1.5,1.5,0,0,0,0,3h1.5A2.5,2.5,0,0,1,21,5.5V7a1.5,1.5,0,0,0,3,0V5.5A5.506,5.506,0,0,0,18.5,0Z"/></svg>
 					</button>
 				</div>
 				<svg id = "arctimer">
@@ -379,7 +377,7 @@
 					document.getElementById('mytimerplay').style.display = 'none';
 					document.getElementById('mytimermode').style.display = 'none';
 					document.getElementById('mytimerreset').style.display = 'none';
-					document.getElementById('mytimerpause').style.display = 'block';
+					document.getElementById('mytimerpause').style.display = 'block';								 						document.getElementById('mytimerfs').style.display = 'block';
 					document.getElementById('negtimer').style.display = 'none';
 					document.getElementById('timerinputedit').style.display = 'none';
 					document.getElementById('postimer').style.display = 'none';
@@ -428,7 +426,7 @@
 					document.getElementById('mytimerpause').style.display = 'none';
 					document.getElementById('mytimerplay').style.display = 'block';
 					document.getElementById('mytimermode').style.display = 'none';
-					document.getElementById('mytimerreset').style.display = 'block';
+					document.getElementById('mytimerreset').style.display = 'block';								 						document.getElementById('mytimerfs').style.display = 'none';
 					document.getElementById('mytimer').style.animationName = 'timerblink';
 					document.getElementById('arc1').style.transition = '3s ease';
 					document.body.onkeyup = function(e){
@@ -629,10 +627,12 @@
 				function myTimerFsOn() {
 					document.querySelector("body").requestFullscreen();
 					$('#mytimerfs').attr('onclick', 'myTimerFsOff()');
+					document.getElementById('mytimerfs').innerHTML = '<svg class = "timer-func-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="512" height="512"><path d="M9,2.5A6.5,6.5,0,0,1,2.5,9h-1a1.5,1.5,0,0,1,0-3h1A3.5,3.5,0,0,0,6,2.5v-1a1.5,1.5,0,0,1,3,0Z"/><path d="M16.5,24A1.5,1.5,0,0,1,15,22.5v-1A6.5,6.5,0,0,1,21.5,15h1a1.5,1.5,0,0,1,0,3h-1A3.5,3.5,0,0,0,18,21.5v1A1.5,1.5,0,0,1,16.5,24Z"/><path d="M22.5,9h-1A6.5,6.5,0,0,1,15,2.5v-1a1.5,1.5,0,0,1,3,0v1A3.5,3.5,0,0,0,21.5,6h1a1.5,1.5,0,0,1,0,3Z"/><path d="M7.5,24A1.5,1.5,0,0,1,6,22.5v-1A3.5,3.5,0,0,0,2.5,18h-1a1.5,1.5,0,0,1,0-3h1A6.5,6.5,0,0,1,9,21.5v1A1.5,1.5,0,0,1,7.5,24Z"/></svg>';
 				}
 				function myTimerFsOff() {
 					document.exitFullscreen();
 					$('#mytimerfs').attr('onclick', 'myTimerFsOn()');
+					document.getElementById('mytimerfs').innerHTML = '<svg class = "timer-func-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="512" height="512"><path d="M22.5,15.5A1.5,1.5,0,0,0,21,17v1.5A2.5,2.5,0,0,1,18.5,21H17a1.5,1.5,0,0,0,0,3h1.5A5.506,5.506,0,0,0,24,18.5V17A1.5,1.5,0,0,0,22.5,15.5Z"/><path d="M7,0H5.5A5.506,5.506,0,0,0,0,5.5V7A1.5,1.5,0,0,0,3,7V5.5A2.5,2.5,0,0,1,5.5,3H7A1.5,1.5,0,0,0,7,0Z"/><path d="M7,21H5.5A2.5,2.5,0,0,1,3,18.5V17a1.5,1.5,0,0,0-3,0v1.5A5.506,5.506,0,0,0,5.5,24H7a1.5,1.5,0,0,0,0-3Z"/><path d="M18.5,0H17a1.5,1.5,0,0,0,0,3h1.5A2.5,2.5,0,0,1,21,5.5V7a1.5,1.5,0,0,0,3,0V5.5A5.506,5.506,0,0,0,18.5,0Z"/></svg>';
 				}
 			</script>
 		</div>
