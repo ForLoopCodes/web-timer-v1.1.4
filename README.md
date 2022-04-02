@@ -1,4 +1,4 @@
-# ***Timer v1.1.2***
+# ***Timer v1.1.3***
 
 This is a very cool **countdown timer** which is on open source, free to use and contribute.
 
