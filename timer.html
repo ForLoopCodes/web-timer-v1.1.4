@@ -25,7 +25,7 @@
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
-				background: linear-gradient(135deg, #f9e8ee, #e8f0f9);
+				background: #e8f0f9;
 			}
 			@font-face {
 				font-family: ellograph CF;
@@ -609,7 +609,7 @@
 				function myTimerDarkModeOn() {
 					const nodeList = document.querySelectorAll('path');
 					for (let i = 0; i < nodeList.length; i++) nodeList[i].style.filter = 'invert(1)';
-					document.querySelector('body').style.background = 'linear-gradient(135deg, #001328, #280021)';
+					document.querySelector('body').style.background = '#001328';
 					document.querySelector('#inputhr').style.filter = 'invert(1)';
 					document.querySelector('#inputmin').style.filter = 'invert(1)';
 					document.getElementById('mytimer').style.color = 'white';
@@ -619,7 +619,7 @@
 				function myTimerLightModeOn() {
 					const nodeList = document.querySelectorAll('path');
 					for (let i = 0; i < nodeList.length; i++) nodeList[i].style.filter = 'invert(0)';
-					document.querySelector('body').style.background = 'linear-gradient(135deg, #f9e8ee, #e8f0f9)';
+					document.querySelector('body').style.background = '#e8f0f9';
 					document.querySelector('#inputhr').style.filter = 'invert(0)';
 					document.querySelector('#inputmin').style.filter = 'invert(0)';
 					document.getElementById('mytimer').style.color = 'black';
