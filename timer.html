@@ -119,12 +119,11 @@
 			#inputhr, #inputmin {
 				width: 26px;
 				height: 15px;
-				background: transparent;
-				backdrop-filter: blur(50px);
+				background: #e8f0f9;
 				filter: invert(0);
 				opacity: 0;
 				outline: none;
-				border: 2px solid transparent;
+				border: 2px solid #e8f0f9;
 				z-index: 2;
 				text-align: center;
 				transition: 0.3s ease;
@@ -371,6 +370,7 @@
 								document.getElementById('mytimerreset').style.display = 'block';
 								document.getElementById('mytimer').style.animationName = 'timerblink';
 								document.getElementById('mytimerpause').style.display = 'none';
+								document.getElementById('mytimerfs').style.display = 'none';
 								clearInterval(timerPlayPauseInterval);
 							}
 						}
@@ -609,8 +609,12 @@
 					const nodeList = document.querySelectorAll('svg');
 					for (let i = 0; i < nodeList.length; i++) nodeList[i].style.filter = 'invert(1)';
 					document.querySelector('body').style.background = '#001328';
-					document.querySelector('#inputhr').style.filter = 'invert(1)';
-					document.querySelector('#inputmin').style.filter = 'invert(1)';
+					document.querySelector('#inputhr').style.background = '#001328';
+					document.querySelector('#inputmin').style.background = '#001328';
+					document.querySelector('#inputhr').style.border = '2px solid #001328';
+					document.querySelector('#inputmin').style.border = '2px solid #001328';
+					document.querySelector('#inputhr').style.color = 'white';
+					document.querySelector('#inputmin').style.color = 'white';
 					document.getElementById('mytimer').style.color = 'white';
 					$('#mytimermode').attr('onclick', 'myTimerLightModeOn()');
 					$('#mytimermode').attr('title', 'Light mode.');
@@ -619,8 +623,12 @@
 					const nodeList = document.querySelectorAll('svg');
 					for (let i = 0; i < nodeList.length; i++) nodeList[i].style.filter = 'invert(0)';
 					document.querySelector('body').style.background = '#e8f0f9';
-					document.querySelector('#inputhr').style.filter = 'invert(0)';
-					document.querySelector('#inputmin').style.filter = 'invert(0)';
+					document.querySelector('#inputhr').style.background = '#e8f0f9';
+					document.querySelector('#inputmin').style.background = '#e8f0f9';
+					document.querySelector('#inputhr').style.border = '2px solid #e8f0f9';
+					document.querySelector('#inputmin').style.border = '2px solid #e8f0f9';
+					document.querySelector('#inputhr').style.color = 'black';
+					document.querySelector('#inputmin').style.color = 'black';
 					document.getElementById('mytimer').style.color = 'black';
 					$('#mytimermode').attr('onclick', 'myTimerDarkModeOn()');
 					$('#mytimermode').attr('title', 'Dark mode.');
