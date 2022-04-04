@@ -62,7 +62,7 @@ This **HTML**, **CSS**, and **JavaScript based** timer is ease to use on any dev
 > 
 > ![image](https://user-images.githubusercontent.com/89027512/161438585-70b86105-b734-4ee6-98e6-95458a797346.png)
 
-> 13. You can also change the number or minutes and hours using the infut fields, shown on clicking on the time.
+> 13. You can also change the number or minutes and hours using the input fields, shown on clicking on the time.
 > 
 > ![image](https://user-images.githubusercontent.com/89027512/161438676-fcc7b4f0-cc97-4340-b0b2-c1026557f336.png)
 
