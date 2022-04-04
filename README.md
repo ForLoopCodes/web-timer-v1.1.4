@@ -155,7 +155,7 @@ _**I am continuously updating this app and very excited to add many features to 
 > 2. **Known bugs removed.**
 
 
-#### v1.1.3 _(present)_
+#### v1.1.3
 > 1. Feature update:
 >    - Now you can use the **```F```** shortcut key to **both enable and disable full screen**. (as recommended by _[@Vinesh27](https://github.com/vinesh27)_.)
 >    - **Full screen button added**. It will be visible when timer is started.
@@ -163,7 +163,7 @@ _**I am continuously updating this app and very excited to add many features to 
 > 2. Javascript code **refractored into camel case** by _[@Vinesh27](https://github.com/vinesh27)_.
 
 
-#### v1.1.2
+#### v1.1.4 _(present)_
 > 1. Feature update:
 >    - New **shortcut keys** added!
 >      1. **```↑```** Add 15 minutes to timer.
