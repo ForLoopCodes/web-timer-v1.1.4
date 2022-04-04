@@ -155,10 +155,10 @@ _**I am continuously updating this app and very excited to add many features to 
 
 #### v1.1.3 _(present)_
 > 1. Feature update:
->    - Now you can use the **```F```** shortcut key to **both enable and disable full screen**. (as recommended by _@Vinesh27_.)
+>    - Now you can use the **```F```** shortcut key to **both enable and disable full screen**. (as recommended by _[@Vinesh27](https://github.com/vinesh27)_.)
 >    - **Full screen button added**. It will be visible when timer is started.
 >    - Very minor style changes.
-> 2. Javascript code refractored into camel case by _@Vinesh27_.
+> 2. Javascript code refractored into camel case by _[@Vinesh27](https://github.com/vinesh27)_.
 
 
 ## Future update goals log:
