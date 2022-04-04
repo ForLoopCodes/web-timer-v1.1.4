@@ -1,4 +1,4 @@
-# ***Timer v1.1.3***
+# ***Timer v1.1.4***
 
 This is a very cool **countdown timer** which is on open source, free to use and contribute.
 
@@ -71,6 +71,8 @@ This **HTML**, **CSS**, and **JavaScript based** timer is ease to use on any dev
 >  - **```R```** Reset.
 >  - **```D```** Toggle dark/light mode.
 >  - **```F```** Enable/Disable full screen.
+>  - **```↑```** Add 15 minutes to timer.
+>  - **```↓```** Subtract 15 minutes from timer.
 
 
 ## Contact:
@@ -150,7 +152,7 @@ _**I am continuously updating this app and very excited to add many features to 
 >      4. **```F```** Enable full screen.
 >      5. **```Esc```** Disable full screen.
 >    - Minor **style changes.**
-> 2. **No more bugs left.**
+> 2. **Known bugs removed.**
 
 
 #### v1.1.3 _(present)_
@@ -158,11 +160,21 @@ _**I am continuously updating this app and very excited to add many features to 
 >    - Now you can use the **```F```** shortcut key to **both enable and disable full screen**. (as recommended by _[@Vinesh27](https://github.com/vinesh27)_.)
 >    - **Full screen button added**. It will be visible when timer is started.
 >    - Very minor style changes.
-> 2. Javascript code refractored into camel case by _[@Vinesh27](https://github.com/vinesh27)_.
+> 2. Javascript code **refractored into camel case** by _[@Vinesh27](https://github.com/vinesh27)_.
+
+
+#### v1.1.2
+> 1. Feature update:
+>    - New **shortcut keys** added!
+>      1. **```↑```** Add 15 minutes to timer.
+>      2. **```↓```** Subtract 15 minutes from timer.
+> 2. **Bug removed:** Buttons had a **black outline while using shortcut keys.** (as reported by _[@Vinesh27](https://github.com/vinesh27)_.)
 
 
 ## Future update goals log:
 > 1. Recommendations in the know:
->    - All Recommended features added. [**Contact me to recommend.**](https://github.com/MeetPatel1706)
+>    - All Recommended features added.
+>    - [**Contact me to recommend.**](https://github.com/MeetPatel1706)
 > 2. Bugs in the know:
->    - All bugs are fixed. [**Contact me to report a bug.**](https://github.com/MeetPatel1706)
+>    - Keyboard users **can't use the input fields with ease.** Will be fixed soon.
+>    - [**Contact me to report a bug.**](https://github.com/MeetPatel1706)
