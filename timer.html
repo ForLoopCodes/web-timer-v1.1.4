@@ -25,6 +25,9 @@
 				background-repeat: no-repeat;
 				background: #e8f0f9;
 			}
+			button:focus-visible {
+				outline: none;
+			}
 			@font-face {
 				font-family: ellograph CF;
 				src: url('fonts/ellograph-cf-bold.ttf') format('truetype');
@@ -358,6 +361,22 @@
 							}
 						)
 					}
+					if(e.keyCode == 38){
+						timerspacebartriggerplay = setInterval (
+							function() {
+								document.querySelector('#addmin').click();
+								clearInterval(timerspacebartriggerplay);
+							}
+						)
+					}
+					if(e.keyCode == 40){
+						timerspacebartriggerplay = setInterval (
+							function() {
+								document.querySelector('#minusmin').click();
+								clearInterval(timerspacebartriggerplay);
+							}
+						)
+					}
 				}
 				function playtimer() {
 					timerPlayPauseInterval = setInterval (
@@ -502,6 +521,22 @@
 							timerspacebartriggerplay = setInterval (
 								function() {
 									document.querySelector('#mytimerfs').click();
+									clearInterval(timerspacebartriggerplay);
+								}
+							)
+						}
+						if(e.keyCode == 38){
+							timerspacebartriggerplay = setInterval (
+								function() {
+									document.querySelector('#addmin').click();
+									clearInterval(timerspacebartriggerplay);
+								}
+							)
+						}
+						if(e.keyCode == 40){
+							timerspacebartriggerplay = setInterval (
+								function() {
+									document.querySelector('#minusmin').click();
 									clearInterval(timerspacebartriggerplay);
 								}
 							)
