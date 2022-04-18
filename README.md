@@ -176,5 +176,5 @@ _**I am continuously updating this app and very excited to add many features to 
 >    - All Recommended features added.
 >    - [**Contact me to recommend.**](https://github.com/MeetPatel1706)
 > 2. Bugs in the know:
->    - Keyboard users **can't use the input fields with ease.** Will be fixed soon.
+>    - All Recommended bugs removed.
 >    - [**Contact me to report a bug.**](https://github.com/MeetPatel1706)
