@@ -189,9 +189,9 @@
 						</button>
 					</div>
 					<div class = "timeredit" id = "timerinputedit">
-						<input id = "inputhr" type = "text" onblur = "limiter(this);" onclick = "document.getElementById('inputhr').style.opacity = '1'" title = "Click to change number of hours.">
+						<input min="0" max="99" id = "inputhr" type = "text" onblur = "limiter(this);" onclick = "document.getElementById('inputhr').style.opacity = '1'" title = "Click to change number of hours.">
 						</input>
-						<input id = "inputmin" type = "text" onblur = "limiterMin(this);" onclick = "document.getElementById('inputmin').style.opacity = '1'" title = "Click to change number of minutes.">
+						<input min="0" max="59" id = "inputmin" type = "text" onblur = "limiterMin(this);" onclick = "document.getElementById('inputmin').style.opacity = '1'" title = "Click to change number of minutes.">
 						</input>
 					</div>
 					<div id = "mytimer">
